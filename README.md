@@ -43,3 +43,39 @@ Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) (create later).
 
 ## License
 MIT License — see [LICENSE](LICENSE) file.
+
+---
+
+## Roadmap & Future Improvements
+
+### High Priority
+- **Board Miniaturization**
+  - Current dimensions: **108.6 × 77.5 mm** (4 layers)
+  - Target: Reduce to **≤ 70 × 70 mm** or closer to standard 30.5×30.5mm / 40×40mm mounting patterns while maintaining proper thermal performance and clearance.
+  - Optimize component placement and routing
+  - Evaluate moving to 6-layer PCB if it enables significant size reduction
+  - Improve power plane design and thermal vias under MOSFETs
+
+- **Firmware Development**
+  - Implement full BLDC FOC / Trapezoidal control using STM32F407
+  - Support DShot600 / DShot1200 protocols
+  - Current sensing and over-current protection
+  - Telemetry (voltage, current, temperature, RPM)
+  - DRV8323RS configuration via SPI
+  - Sensorless startup and BEMF detection tuning
+  - PID tuning for smooth throttle response
+
+### Medium Priority
+- Add onboard 5V / 3.3V BEC with better filtering
+- Improve EMI/EMC performance (snubbers, capacitor placement)
+- Add status LEDs and debugging interfaces (SWD + UART)
+- Thermal simulation and real-world heat testing
+- Input protection (TVS diodes, reverse polarity)
+- Create a configurable GUI tool (Python / Qt) for tuning parameters
+
+### Long Term
+- Support higher current motors (optimize MOSFET cooling)
+- 6S battery compatibility
+- Open-source configurator tool
+- Flight testing on a test quadcopter
+- Documentation for assembly and calibration
