@@ -1,0 +1,142 @@
+(footprint "Battery-Solder-Pads"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "BAT,PADS,SOLDER")
+	(property "Reference" "REF**"
+		(at 0 10.16 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "4ddf254b-9e77-4cd4-bca4-000b55767f0a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Battery-Solder-Pads"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3aa96adc-1a22-4f0f-8d49-81b635e8a820")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8a8dc4f7-5d51-4355-9588-e3f174a8a869")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "083bb233-4773-4b1a-a231-6895f9530387")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2.54 -8.89)
+		(end 2.54 8.89)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f9442935-c6e6-4089-a9cd-3d08e53430dd")
+	)
+	(fp_text user "+"
+		(at -3.81 -3.81 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1e9c95be-1fdf-45d6-9255-4965149cfe1e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "-"
+		(at -3.81 5.08 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "45547de3-2809-4315-85c5-a63880f90c91")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 -6.35)
+		(size 5.08 5.08)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "39454d4a-e848-4082-abc3-84a57644ef98")
+	)
+	(pad "2" smd roundrect
+		(at 0 6.35)
+		(size 5.08 5.08)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "bd194f8b-f220-4a3b-a4a0-4505242de0db")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "*.SilkS")
+		(uuid "75e4eb33-638e-4a0f-82c6-8f0757aee025")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads not_allowed)
+			(copperpour allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -2.54 -8.89) (xy -2.54 8.89) (xy 2.54 8.89) (xy 2.54 -8.89)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
